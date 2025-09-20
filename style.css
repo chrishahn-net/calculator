@@ -24,6 +24,6 @@ div {
 .main {
   border: 1px solid black;
   margin: 10px auto;
-  padding: 10px;
-  width: 300px
+  padding-bottom: 10px;
+  width: 280px;
 }
