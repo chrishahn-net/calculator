@@ -1,6 +1,8 @@
 let a;
 let b;
 let operator;
+const display = document.querySelector('.display');
+const btns = document.querySelectorAll('button');
 
 function add (a, b) {
   return a + b;
