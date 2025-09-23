@@ -1,6 +1,6 @@
-let a;
-let b;
-let operator;
+let a = '';
+let b = '';
+let operator = '';
 
 const display = document.querySelector('.display');
 const clearBtn = document.querySelector('button.clear');
