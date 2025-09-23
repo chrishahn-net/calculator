@@ -36,3 +36,7 @@ function operate (a, b, operator) {
       return divide(a, b);
   }
 }
+
+function updateDisplay (content) {
+  display.textContent = content;
+}
