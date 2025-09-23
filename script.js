@@ -62,6 +62,13 @@ for (let btn of numBtns) {
   });
 }
 
+// Equal button
+equalBtn.addEventListener('click', () => {
+  a = operate(+a, +b, operator);
+  updateDisplay(a);
+  clearVariables();
+});
+
 // Operator buttons
 for (let btn of opBtns) {
   btn.addEventListener('click', (e) => {
