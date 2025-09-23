@@ -40,3 +40,9 @@ function operate (a, b, operator) {
 function updateDisplay (content) {
   display.textContent = content;
 }
+
+function clearVariables () {
+  a = '';
+  b = '';
+  operator = '';
+}
