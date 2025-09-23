@@ -52,3 +52,12 @@ clearBtn.addEventListener('click', () => {
   updateDisplay('');
   clearVariables();
 });
+
+// Number buttons
+for (let btn of numBtns) {
+  btn.addEventListener('click', (e) => {
+    const btnContent = e.target.textContent;
+    b += btnContent;
+    updateDisplay(b);
+  });
+}
