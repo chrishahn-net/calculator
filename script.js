@@ -46,3 +46,9 @@ function clearVariables () {
   b = '';
   operator = '';
 }
+
+// Clear button
+clearBtn.addEventListener('click', () => {
+  updateDisplay('');
+  clearVariables();
+});
