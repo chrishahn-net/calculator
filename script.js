@@ -61,3 +61,23 @@ for (let btn of numBtns) {
     updateDisplay(b);
   });
 }
+
+// Operator buttons
+for (let btn of opBtns) {
+  btn.addEventListener('click', (e) => {
+    if (b === '') {
+      operator = e.target.textContent;
+      return;  // Exits if operator pressed twice in a row
+    }
+    
+    if (a === '') {
+      a = b;
+    } else {
+      a = operate(+a, +b, operator);
+    }
+
+    updateDisplay(a);
+    b = '';
+    operator = e.target.textContent;
+  });
+}
